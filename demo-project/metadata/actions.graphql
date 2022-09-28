@@ -2,9 +2,18 @@ type Query {
   auth0: auth0_profile
 }
 
+type Query {
+  userDetails: user_details
+}
+
 type auth0_profile {
   id: String
   email: String
   picture: String
+}
+
+type user_details {
+  id: String
+  name: String
 }
 

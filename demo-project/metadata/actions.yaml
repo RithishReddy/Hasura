@@ -3,9 +3,14 @@ actions:
     definition:
       kind: ""
       handler: http://localhost:3000
+  - name: userDetails
+    definition:
+      kind: ""
+      handler: https://enigmatic-gorge-91072.herokuapp.com/userDetails
 custom_types:
   enums: []
   input_objects: []
   objects:
     - name: auth0_profile
+    - name: user_details
   scalars: []
