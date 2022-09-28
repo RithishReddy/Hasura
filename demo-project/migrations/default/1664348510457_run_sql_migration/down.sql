@@ -1,0 +1,15 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- CREATE OR REPLACE FUNCTION user_insert() RETURNS TRIGGER AS $$
+-- BEGIN
+--     IF LENGTH(NEW.name) < 4
+--     THEN
+--         RAISE EXCEPTION 'INVALID USER NAME';
+--     ELSE
+--         RETURN NEW;
+--     END IF;
+-- END;
+-- $$ LANGUAGE plpgsql;
+--
+--
+-- CREATE TRIGGER verify_user BEFORE INSERT OR UPDATE ON users FOR EACH ROW EXECUTE PROCEDURE  user_insert();
